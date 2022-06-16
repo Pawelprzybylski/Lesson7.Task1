@@ -1,13 +1,13 @@
 public class PlaceInCinema {
 
-    private int number;
-    private int row;
-    private boolean isTaken = false;
+    private final int number;
+    private final int row;
+    private boolean isTaken;
 
-    public PlaceInCinema(int number, int row, boolean isTaken) {
+    public PlaceInCinema(int number, int row) {
         this.number = number;
         this.row = row;
-        this.isTaken = isTaken;
+        this.isTaken = false;
     }
 
     public int getNumber() {
